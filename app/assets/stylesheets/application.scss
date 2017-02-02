@@ -9,13 +9,13 @@
     padding-top: 0px;
     // 背景画像を暗くする
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) ), url(person-845325_1920.jpg);
-    background-size: cover;
-    // 背景画像の位置を決める
-    background-position: 50% 50%;
-    height: 420px;
+  background-size: cover;
+  // 背景画像の位置を決める
+  background-position: 50% 50%;
+  height: 420px;
 }
 
-.jumbotron .container .row {
+.jumbotron .container .row{
     margin-top: 100px;
     color: #fff;
 }
@@ -23,12 +23,6 @@
 .navbar-default {
     background: transparent;
     border-color: transparent;
-    z-index: 10;
-}
-
-.navbar-devise {
-    background-color: #fff;
-    border-color: #fff;
     z-index: 10;
 }
 
@@ -45,64 +39,104 @@
     background-color: #fff;
 }
 
+//navbar-deviseのcss
+.navbar-devise {
+    background: #fff;
+    border-color: #fff;
+    z-index: 10;
+}
+
+.navbar-devise .navbar-nav > li > a {
+    color: #222222;
+    font-size: 13px;
+}
+
+.navbar-devise .navbar-brand {
+    color: #222222;
+}
+
 // トップページのnavbarのドロップダウンがクリックされた時
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: transparent;
     color: #555;
 }
 
-
 //facebookボタン
-.btn-facebook{
+.btn-facebook {
     color: #fff;
     background-color: #4c66a4;
 }
 
-//プロフィール画像
-.profile-0 {
-    width: 28px;
-    height: 28px;
+// row-space類
+.row-space-top-0 {
+  margin-top: 0px;
 }
 
-.profile-1 {
-    width: 50px;
-    height: 50px;
-}
-.profile-2 {
-    width: 100px;
-    height: 100px;
+.row-space-top-1 {
+  margin-top: 10px;
 }
 
-.profile-full {
-    width: 30px;
+.row-space-top-2 {
+  margin-top: 15px;
 }
 
-@media (min-width:992px){
-    .profile-full {
-        width: 100%;
-    }
+.row-space-top-3 {
+  margin-top: 20px;
 }
 
+.row-space-top-4 {
+  margin-top: 25px;
+}
 
+.row-space-0 {
+  margin-bottom: 0px;
+}
 .row-space-1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .row-space-2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .row-space-3 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .row-space-4 {
     margin-bottom: 25px;
 }
 
-.btn-full {
-    width: 100%
+// プロフィール画像
+.profile-0 {
+    width: 28px !important;
+    height: 28px !important;
+}
 
+.profile-1 {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.profile-2 {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.profile-full {
+  width: 30% !important;
+  height: 80px !important;
+}
+
+@media (min-width: 992px){
+.profile-full {
+        width: 100% !important;
+        height: 180px !important;
+    }
+}
+
+.btn-full {
+    width: 100%;
 }
 
 .vertification-checked:before{
@@ -182,6 +216,7 @@
   display: block;
 }
 
+
 // listings/indexのcss
 a.sidebar-item {
   font-size: 16px;
@@ -239,8 +274,43 @@ span.listing-title {
   }
 }
 
+// showページのcss
+.container-listing-show {
+  background-color: #fff;
+  border-bottom: 1px solid #dce0e0;
+}
+
+.panel-show {
+  border-radius: 0px;
+  border: none;
+}
+
+.panel-show .panel-heading{
+  background-color: rgba(60,63,64,0.9);
+  color: #fff;
+  border-radius: 0px;
+  border-bottom: 0px;
+}
+
+.panel-show .panel-body{
+  border: 1px solid #eee;
+}
+
+.btn-wide{
+  width: 85%;
+}
+
+//showページのデスクトップcss
+@media (min-width: 992px){
+  .panel-show {
+    position: inherit;
+    width: 296px;
+    z-index: 100;
+    margin-top: -62px;
+  }
+}
 
 body {
     color: #222;
-    background-color: #f8f8f8;
+    background-color: #F8F8F8;
 }
